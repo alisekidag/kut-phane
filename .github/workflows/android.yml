@@ -3,12 +3,9 @@ name: Android Build
 on:
   push:
     branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -19,18 +16,12 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
 
-    - name: Setup Gradle
+    - name: Build APK with Gradle
       uses: gradle/gradle-build-action@v2
       with:
         gradle-version: '8.2'
-
-    - name: Build with Gradle
-      run: gradle build --no-daemon
-
-    - name: Build APK
-      run: gradle assembleDebug --no-daemon
+        arguments: assembleDebug --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v3
