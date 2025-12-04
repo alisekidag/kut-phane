@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sınıf Kütüphanesi</string>
+    <string name="add_book">Kitap Ekle</string>
+    <string name="add_student">Öğrenci Ekle</string>
+    <string name="issue_book">Kitap Ver</string>
+    <string name="return_book">İade Al</string>
+    <string name="book_title">Kitap Adı</string>
+    <string name="book_author">Yazar</string>
+    <string name="student_name">Öğrenci Adı</string>
+    <string name="student_number">Numara</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="select_student">Öğrenci Seç</string>
+    <string name="available">Rafta</string>
+    <string name="borrowed">Ödünç Verildi</string>
+    <string name="borrowed_by">Alan: %1$s</string>
+    <string name="delete">Sil</string>
+    <string name="confirm_delete">Bu kitabı silmek istediğinize emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="search_hint">Kitap veya öğrenci ara...</string>
+</resources>
